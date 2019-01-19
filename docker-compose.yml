@@ -12,10 +12,10 @@ services:
     ports:
       - '3050:80'
     depends_on:
-      - api
+      - server
       - client
       - worker
-  api:
+  server:
     build:
       dockerfile: Dockerfile.dev
       context: ./server
