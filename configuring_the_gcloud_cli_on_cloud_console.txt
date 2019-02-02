@@ -1,0 +1,5 @@
+gcloud config set project multi-k8s-230412
+gcloud config set compute/zone europe-west2-a
+gcloud container clusters get-credentials multi-cluster
+kubectl get pods
+
